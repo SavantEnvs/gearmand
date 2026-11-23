@@ -1,0 +1,3 @@
+--listen=127.0.0.1 --threads=2 --backlog=64
+--queue-type=libsqlite3 --libsqlite3-db=gearmand.db
+--hashtable-buckets=1024

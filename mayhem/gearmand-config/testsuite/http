@@ -1,0 +1,3 @@
+--protocol=http --http-port=8080
+--worker-wakeup=2 --keepalive --keepalive-idle=30
+--job-handle-prefix=H:test

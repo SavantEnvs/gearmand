@@ -1,0 +1,11 @@
+project: savantenvs/gearmand
+target: libgearman-client
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/libgearman-client/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_client
+    libfuzzer: true
+    timeout: 10
